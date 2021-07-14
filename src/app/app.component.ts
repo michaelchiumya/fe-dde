@@ -14,8 +14,13 @@ export class AppComponent {
     ngOnInit() {
       this.items = [
         {
+          label:'Home',
+          icon:'pi pi-fw pi-home',
+          url: 'home'
+        },
+        {
           label:'Artists',
-          icon:'pi pi-fw pi-file',
+          icon:'pi pi-fw pi-user-minus',
           items:[
             {
               label:'New',
@@ -48,11 +53,11 @@ export class AppComponent {
         },
         {
           label:'Music',
-          icon:'pi pi-fw pi-users',
+          icon:'pi pi-fw pi-volume-up',
           items:[
             {
-              label:'Filter',
-              icon:'pi pi-fw pi-filter',
+              label:'Buy',
+              icon:'pi pi-fw pi-shopping-cart',
               items:[
                 {
                   label:'Print',
@@ -61,14 +66,14 @@ export class AppComponent {
               ]
             },
             {
-              icon:'pi pi-fw pi-bars',
-              label:'List'
+              icon:'pi pi-fw pi-tags',
+              label:'Freebies'
             }
           ]
         },
         {
           label:'Videos',
-          icon:'pi pi-fw pi-calendar',
+          icon:'pi pi-fw pi-youtube',
           items:[
             {
               label:'Edit',
@@ -98,8 +103,13 @@ export class AppComponent {
           ]
         },
         {
-          label:'Login',
-          icon:'pi pi-fw pi-power-off'
+          label:'Blog',
+          icon:'pi pi-fw pi-user'
+        },
+        {
+          label:'User Account',
+          icon:'pi pi-fw pi-user',
+          url: 'login'
         }
       ]
     }

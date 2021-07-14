@@ -32,18 +32,13 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   this.cars = [
-      "Bamboo Watch",
+      "song Watch",
       "Black Watch",
       "Blue Band",
-      "Blue T-Shirt",
-      "Bracelet",
-      "Brown Purse",
-      "Chakra Bracelet",
-      "Galaxy Earrings",
-      "Game Controller",
-      "Gaming Set",
-      "Gold Phone Case",
-      "Green Earbuds"];
+      "music Watch",
+      "xander Watch",
+       "Blue gang",
+      ];
   }
 
 }

@@ -1,5 +1,17 @@
-<p-carousel [value]="cars" [numVisible]="3" [numScroll]="1" [responsiveOptions]="responsiveOptions">
+<p-carousel [value]="cars" [numVisible]="3" [numScroll]="1" [responsiveOptions]="responsiveOptions" [style]="{'margin-top': '.5em'}">
   <ng-template let-car pTemplate="item">
-    Content to display
+
+    <p-card header="Advanced Card" subheader="Card Subheader" [style]="{width: '360px'}" styleClass="p-card-shadow">
+      <ng-template pTemplate="header">
+        <img alt="Card" src="assets/showcase/images/usercard.png">
+      </ng-template>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+        !</p>
+      <ng-template pTemplate="footer">
+        <p-button label="Save" icon="pi pi-check"></p-button>
+        <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary" [style]="{'margin-left': '.5em'}"></p-button>
+      </ng-template>
+    </p-card>
+
   </ng-template>
 </p-carousel>
