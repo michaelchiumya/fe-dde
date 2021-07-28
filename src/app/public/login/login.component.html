@@ -1,17 +1,22 @@
 <br>
-<h3>Login</h3>
-<div class="p-fluid p-formgrid p-grid">
+<div class="container">
 
-  <div class="p-field p-col-12 p-md-6">
-    <label for="email">Email</label>
-    <input id="email" type="email" pInputText>
-  </div>
+  <h3>Login</h3>
+  <div class="p-fluid p-formgrid p-grid">
 
-  <div class="p-field p-col-12 p-md-6">
-    <label for="password">Password</label>
-    <input id="password" type="password" pInputText>
+    <div class="p-field p-col-12 p-md-6 mb-2">
+         <label for="email">Email</label>
+         <input id="email" type="email" pInputText>
+    </div>
+
+    <div class="mt-2 p-field p-col-12 p-md-6 mb-2">
+      <label for="password">Password</label>
+      <input id="password" type="password" pInputText>
+    </div>
+
   </div>
+  <br>
+  <button pButton type="button" label="Large" icon="pi pi-check" class="p-button-lg p-button-secondary mb-2"></button>
+  <div class="p-text-light"><p class="fst-italic">Don't have an account? <a [routerLink]="'/register'">register</a></p></div>
 
 </div>
-<br>
-<div class="p-text-light">Don't have an account? <a [routerLink]="'/register'">register</a></div>

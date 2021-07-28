@@ -1,18 +1,20 @@
 <br>
+<div class="container">
+
 <h3>Register</h3>
 <div class="p-fluid p-formgrid p-grid">
 
-  <div class="p-field p-col-12 p-md-6">
+  <div class="p-field p-col-12 p-md-6 mb-2">
     <label for="email">Name</label>
     <input id="name" type="text" pInputText>
   </div>
 
-  <div class="p-field p-col-12 p-md-6">
+  <div class="p-field p-col-12 p-md-6 mb-2">
     <label for="email">Email</label>
     <input id="email" type="email" pInputText>
   </div>
 
-  <div class="p-field p-col-12 p-md-6">
+  <div class="p-field p-col-12 p-md-6 mb-2">
     <label for="password">Password</label>
     <input id="password" type="password" pInputText>
   </div>
@@ -24,4 +26,7 @@
 
 </div>
 <br>
+  <button pButton type="button" label="Proceed" icon="pi pi-check" class="p-button-lg p-button-secondary mb-2"></button>
 <div class="p-text-light">Already have an account? <a [routerLink]="'/login'">login</a></div>
+
+</div>

@@ -23,8 +23,8 @@ export class AppComponent {
           icon:'pi pi-fw pi-user-minus',
           items:[
             {
-              label:'New',
-              icon:'pi pi-fw pi-plus',
+              label:'Signed',
+              icon:'pi pi-fw pi-id-card',
               items:[
                 {
                   label:'Bookmark',
@@ -39,66 +39,39 @@ export class AppComponent {
             },
 
             {
-              label:'Delete',
-              icon:'pi pi-fw pi-trash'
-            },
-            {
               separator:true
             },
             {
-              label:'Export',
+              label:'Explore',
               icon:'pi pi-fw pi-external-link'
             }
           ]
         },
         {
-          label:'Music',
-          icon:'pi pi-fw pi-volume-up',
+          label:'Store',
+          icon:'pi pi-fw pi-shopping-cart',
           items:[
             {
-              label:'Buy',
-              icon:'pi pi-fw pi-shopping-cart',
-              items:[
-                {
-                  label:'Print',
-                  icon:'pi pi-fw pi-print'
-                }
-              ]
+              label: 'Music',
+              icon: 'pi pi-fw pi-volume-up'
             },
             {
               icon:'pi pi-fw pi-tags',
+              label:'Merch'
+            },
+            {
+              icon:'pi pi-fw pi-tag',
               label:'Freebies'
             }
           ]
         },
         {
           label:'Videos',
-          icon:'pi pi-fw pi-youtube',
+          icon:'pi pi-fw pi-video',
           items:[
             {
-              label:'Edit',
-              icon:'pi pi-fw pi-pencil',
-              items:[
-                {
-                  label:'Save',
-                  icon:'pi pi-fw pi-calendar-plus'
-                },
-                {
-                  label:'Delete',
-                  icon:'pi pi-fw pi-calendar-minus'
-                },
-
-              ]
-            },
-            {
-              label:'Archieve',
-              icon:'pi pi-fw pi-calendar-times',
-              items:[
-                {
-                  label:'Remove',
-                  icon:'pi pi-fw pi-calendar-minus'
-                }
-              ]
+              label:'Youtube',
+              icon:'pi pi-fw pi-youtube',
             }
           ]
         },
@@ -114,6 +87,9 @@ export class AppComponent {
       ]
     }
 
+  mainSearch($event: MouseEvent) {
+    alert("search not implemented !");
   }
+}
 
 
